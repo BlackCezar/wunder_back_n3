@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Knowledge" ADD COLUMN     "sort" INTEGER NOT NULL DEFAULT 500;

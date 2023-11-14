@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "SysemSettingsLine" ALTER COLUMN "fromAmount" SET DATA TYPE BIGINT,
+ALTER COLUMN "toAmount" SET DATA TYPE BIGINT;

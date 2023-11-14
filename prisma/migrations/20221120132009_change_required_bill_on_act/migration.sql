@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Acts" ALTER COLUMN "billId" DROP NOT NULL;
