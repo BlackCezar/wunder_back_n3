@@ -1,5 +1,7 @@
 {
     "scripts": {
+        "first-deploy": "pm2 deploy production setup",
+        "deploy": "pm2 deploy production",
         "prebuild": "rimraf dist",
         "build": "nest build",
         "build:watch": "nest build --watch",

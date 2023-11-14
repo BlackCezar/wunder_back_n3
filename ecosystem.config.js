@@ -6,14 +6,12 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'SSH_USERNAME',
-      host : 'SSH_HOSTMACHINE',
-      ref  : 'origin/master',
-      repo : 'GIT_REPOSITORY',
-      path : 'DESTINATION_PATH',
-      'pre-deploy-local': '',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': ''
+      user : 'root',
+      host : '45.90.32.200',
+      ref  : 'origin/main',
+      repo : 'git@github.com:BlackCezar/wunder_back_n3.git',
+      path : '/var/apps/wunder_n3/back',
+      'post-deploy' : 'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
     }
   }
 };
