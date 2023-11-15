@@ -52,7 +52,7 @@ async function appStart() {
     const redocOptions: RedocOptions = {
         title: "Wunder Back API",
     };
-    // // //@ts-ignore
+    //@ts-ignore
     await RedocModule.setup("/docs", app, document, redocOptions);
 
     // Start server

@@ -68,12 +68,12 @@ export class CreateUserDto {
 
     @ApiProperty({
         oneOf: [
-            { $ref: getSchemaPath(CreateUserAdminPayload) },
+            { $ref: getSchemaPath(typeof CreateUserAdminPayload) },
             {
-                $ref: getSchemaPath(CreateUserGroupPayload),
+                $ref: getSchemaPath(typeof CreateUserGroupPayload),
             },
             {
-                $ref: getSchemaPath(CreateUserCustomerPayload),
+                $ref: getSchemaPath(typeof CreateUserCustomerPayload),
             },
         ],
     })
